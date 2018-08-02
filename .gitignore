@@ -7,4 +7,5 @@
 /**/*.DS_Store
 .sublime-gulp.cache
 sublime-gulp.log
+package-lock.json
 

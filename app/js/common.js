@@ -1,5 +1,9 @@
 $(function() {
+
 	 $('.slider').bxSlider({
-	//		auto: true
+		auto: true
 	 });
+
+
+
 });

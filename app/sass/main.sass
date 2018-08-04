@@ -45,13 +45,13 @@ body
 h1
 	font-size: 30px
 	padding: 10px
-		color: $title
+
 
 h2
 	font-size: 24px
 	text-align: center
 	padding: 10px
-	color: $title
+
 
 p
 	color: #333
@@ -275,17 +275,27 @@ form
 .bg-accent
 	background: $accent
 
+.bg
+	background: $bg	
+
 .advantage-text-bottom
 	font-size: 18px
 	font-weight: bold
 	line-height: 1.1
 
+.topsale
+	background: $back
 .topsale-wrap
 	display: flex
+	background: #fff
 
+.section-title
+	margin: 20px 20px 10px
+	color: $accent
+	text-align: center
 
 .side-menu
-	
+	position: relative
 
 .nav-category
 	background: $title
@@ -293,15 +303,121 @@ form
 	font-size: 16px
 	padding: 10px 20px
 	font-weight: bold
+	margin-top: 20px
 
 
 .side-link
-	border-bottom: 1px solid $link
+	border-bottom: 1px solid $back
 	padding: 10px 0
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: space-between
 
 
+.sub-side-menu
+	display: none
+	position: absolute
+	right: -200px
+	top: 0
+	width: 200px
+	background: #fff
+
+.side-link:hover .sub-side-menu
+ display: flex
+ flex-direction: column
+
+.side-link i 
+	font-size: 8px
+	color: $link
+	padding: 0 20px 0 0
+
+.side-link .fa-minus
+	display: none
+
+.side-link:hover .fa-plus
+	display: none
+
+.side-link:hover .fa-minus
+	display: block	
 
 .nav-padding
 	padding: 10px	
 
+.topsale-good
+	display: flex
+	flex: 1
+	flex-direction: column
+
+.goods-group
+	display: flex
+	padding: 10px
+	flex-wrap: wrap
+	align-items: center
+	justify-content: start
+
+.goods-item
+	display: flex
+	padding: 10px
+	align-items: center
+	justify-content: start
+	flex-direction: column
+	width: 29%
+	box-shadow: 0 1px 3px #d0d0d0
+	transition: all .3s ease
+	margin: 10px
+	background: #ddf3fb
+
+	
+.good-item-img
+	padding: 20px
+	box-shadow: 0 1px 3px #d0d0d0
+	transition: all .3s ease
+	background: $bg
+
+.good-item-img img
+		transition: all .3s ease	
+
+.good-item-img:hover img
+	transform: scale(1.1)
+
+.goods-item:hover
+	box-shadow: 0 1px 3px $link
+
+.goods-item:hover .good-item-img
+	box-shadow: 0 1px 3px $link	
+
+.good-link
+	font-weight: bold
+	font-size: 16px
+	padding-top: 5px
+
+.price b
+	color: $hover
+	font-size: 16px
+.price
+	padding-top: 10px	
+.articul
+	text-decoration: underline
+
+.footer
+	background: #003b52
+
+
+.footer-wrap
+	padding: 20px 10px 40px
+	background: #003b52
+	color: #fff
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap
+
+.footer-oferts
+	width: 100%
+	font-size: 10px
+	text-align: center
+
+.grey
+	color: #eee	
 @import "media.sass" // Всегда в конце

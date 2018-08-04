@@ -42,6 +42,21 @@ body
 	opacity: 1
 	font-weight: 300
 
+h1
+	font-size: 30px
+	padding: 10px
+		color: $title
+
+h2
+	font-size: 24px
+	text-align: center
+	padding: 10px
+	color: $title
+
+p
+	color: #333
+	padding: 10px	 	
+
 ul,li
 	list-style: none
 
@@ -58,29 +73,33 @@ a
 
 .header 
 	background: #eee
+.slogan
+	background: $phone
+	color: #fff
+	text-align: center
+	padding: 10px	
 
+.top-line
+	background: $back
+	padding: 20px 10px
+	display: flex
+	justify-content: space-between
+	align-items: center
 
 .container
 	position: relative
 	max-width: 1140px
 	margin: 0 auto
-	display: flex
-	justify-content: space-between
-	align-items: center
-	padding: 20px 10px
-	background: $back
+	padding: 0
 
 .header-logo
-
 	display: flex
 	flex-direction: column
 	align-items: start
 	line-height: 1
 
-
 .logo-img
 	max-width: 100%
-
 
 .logo-text 
 	color: $link
@@ -109,7 +128,6 @@ form
 .search 
 	padding: 20px
 
-
 .header-nav
 	display: flex
 	justify-content: start
@@ -127,10 +145,8 @@ form
 	text-decoration: underline
 
 .header-phone
-
 	display: flex
 	flex-direction: column
-
 
 .phone-link
 	display: flex
@@ -146,7 +162,7 @@ form
 	background: $hover
 	color: #fff
 	text-align: center
-	padding: 5px 0 
+	padding: 5px 20px 
 	border-radius: 10px
 	cursor: pointer
 	transition: all .3s ease
@@ -181,5 +197,111 @@ form
 	color: $hover
 	cursor: default
 	font-weight: 400
+
+.main-slider
+	background: #f8f8f8
+
+.slider-wrap
+	background: #fff
+
+.slider-wrap h2
+	position: absolute
+	top: 15%
+	left: 8%
+	z-index: 3
+	color: #fff
+
+.bx-wrapper
+	box-shadow: none
+	border: 5px solid $link
+	margin: 0
+
+.bx-controls-direction
+	display: none
+
+.bx-wrapper .bx-pager
+	bottom: 10px
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus
+	background: #fff
+
+.bx-wrapper .bx-pager.bx-default-pager a
+	width: 15px
+	height: 15px
+	border: 2px solid $link
+	background: $phone			
+
+.slider-item
+	position: relative
+
+.slider-link
+	position: absolute
+	bottom: 20%
+	right: 15%	
+
+.advantage-wrap
+	background: #e8f9ff
+	padding: 20px 0
+	color: $title
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+
+.advantage-wrap h2, .advantage-wrap p
+	width: 100%
+
+.advantage-item
+	display: flex
+	flex: 1
+	justify-content: center
+	align-items: center
+	color: #fff
+	padding: 10px 0
+
+.advantage-item i 
+	font-size: 50px
+	margin-right: 10px
+
+.bg-title
+	background: $link
+
+.bg-phone
+	background: $title
+
+.bg-link
+	background: $phone
+
+.bg-accent
+	background: $accent
+
+.advantage-text-bottom
+	font-size: 18px
+	font-weight: bold
+	line-height: 1.1
+
+.topsale-wrap
+	display: flex
+
+
+.side-menu
+	
+
+.nav-category
+	background: $title
+	color: #fff
+	font-size: 16px
+	padding: 10px 20px
+	font-weight: bold
+
+
+.side-link
+	border-bottom: 1px solid $link
+	padding: 10px 0
+
+
+
+.nav-padding
+	padding: 10px	
 
 @import "media.sass" // Всегда в конце

@@ -2,26 +2,161 @@
 
 /*==========  Desktop First  ==========*/
 
+	/* Large Devices, iPad-Pro */
+@media only screen and (max-width : 1366px)
+
+
+	#one-click
+		padding-top: 10%
+
+	#sendorderform
+		width: 40%
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 
+	/* Large Devices, iPad-Pro */
+@media only screen and (max-width : 1024px)
+	.top-line
+		justify-content: space-around
 
+	.nav-search
+		order: 4
+		width: 100%
+
+	.goods-item
+		width: 28%
+
+	#one-click
+		padding-top: 10%
+
+	#sendorderform
+		width: 40%
+
+	.slider-link
+		bottom: 15%
+		right: 6%					
+
+	
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
 
 
-/* Small Devices, Tablets */
+/* i-Pad */
 @media only screen and (max-width : 768px)
-	.container
-		flex-direction: column
+	.goods-item
+		width: 26%
+
+	.font-small
+		font-size: 12px
+	
+	.advantage-item
+		width: 50%
+
+
+			
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.advantage-item
+		width: 100%
 
+	.goods-item
+		width: 100%	
+
+	.hide
+		display: none
+
+	.flex-column
+		display: flex
+		flex-direction: column
+
+	.topsale
+		order: 1
+
+	.advantage
+		order: 2	
+
+	.content
+		order: 3
+
+	.header-info
+		padding: 10px 0
+		text-align: center			
+
+	.padding-vert
+		padding: 10px 0
+	
+	.nav-category
+		margin-top: 0
+
+	.fa-search
+		display: block
+		position: absolute
+		top: 10px
+		right: 10px
+		font-size: 30px
+		color: $link
+
+	.top-line .fa-times-circle
+		display: block
+		position: absolute
+		top: 15px
+		right: 15px
+		font-size: 30px
+		color: #fff
+		z-index: 99999
+
+	.search-mobile
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		z-index: 999
+		display: block
+		background: rgba(5, 47, 64, 0.8)
+		padding: 50px 10px 10px
+	
+	.fa-bars
+		display: block
+		position: absolute
+		left: 15px
+		bottom: 15px
+		color: $link
+		font-size: 30px
+	
+	.fa-times
+		position: absolute
+		left: 15px
+		bottom: 15px
+		color: $link
+		font-size: 30px
+
+	.top-nav
+		position: absolute
+		bottom: -188px
+		left: 0
+		right: 0
+		display: none
+		background: #fff
+		z-index: 99999
+
+	.header-nav
+		flex-direction: column
+		align-items: start
+
+	.header-nav li
+		font-size: 20px
+		padding: 10px 40px
+		margin: 0
+		border-bottom: 1px solid #eee
+		width: 100%
+
+
+			
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

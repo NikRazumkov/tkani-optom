@@ -52,6 +52,9 @@ h2
 	text-align: center
 	padding: 10px
 
+h3
+	font-size: 18px
+	text-align: center
 
 p
 	color: #333
@@ -62,6 +65,8 @@ ul,li
 
 input, textarea
 	outline: none
+	padding: 10px
+	margin-bottom: 10px
 
 a	
 	text-decoration: none
@@ -88,6 +93,7 @@ label
 	display: flex
 	justify-content: space-between
 	align-items: center
+	flex-wrap: wrap
 
 .container
 	position: relative
@@ -131,6 +137,12 @@ form
 .search 
 	padding: 20px
 
+.fa-search
+	display: none
+
+.top-line .fa-times-circle
+	display: none
+
 .header-nav
 	display: flex
 	justify-content: start
@@ -165,14 +177,17 @@ form
 	background: $hover
 	color: #fff
 	text-align: center
-	padding: 5px 20px 
+	padding: 10px 20px 
 	border-radius: 10px
 	cursor: pointer
 	transition: all .3s ease
 	border: none
+	
+.fa-bars
+	display: none
 
 .btn:hover 
-	opacity: .85
+	background: $link
 
 .btn-header 
 	margin-top: 10px
@@ -250,6 +265,7 @@ form
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
+	flex-wrap: wrap
 
 
 .advantage-wrap h2, .advantage-wrap p
@@ -257,11 +273,11 @@ form
 
 .advantage-item
 	display: flex
-	flex: 1
 	justify-content: center
 	align-items: center
 	color: #fff
 	padding: 10px 0
+	width: 25%
 
 .advantage-item i 
 	font-size: 50px
@@ -312,7 +328,7 @@ form
 
 .side-link
 	border-bottom: 1px solid $back
-	padding: 10px 0
+	padding: 5px 0
 	position: relative
 	display: flex
 	align-items: center
@@ -411,7 +427,7 @@ form
 .footer-wrap
 	padding: 20px 10px 40px
 	background: #003b52
-	color: #fff
+	color: $phone
 	display: flex
 	justify-content: space-between
 	align-items: center
@@ -434,8 +450,9 @@ form
 	border-top-right-radius: 10px
 	border-bottom-right-radius: 10px
 
+
 .bcClicker
-	background: $accent
+	background: $hover
 	cursor: pointer
 	height: 200px
 	width: 40px
@@ -450,26 +467,34 @@ form
 .flexy
 	display: flex
 	flex-direction: column
-	background: $br
+	background: $bg
 	transition: all 1s ease
-	padding: 5px	
+	padding: 5px
+	border-top-right-radius: 10px	
+	border-bottom-right-radius: 10px
+	border: 1px solid $link
+
+.bcForm
+	display: none		
 
 .bcForm .fa-times-circle
 	position: absolute
 	text-outline: 5px
 	right: 5px
 	font-size: 25px
-	color: #fff
+	color: $link
 	cursor: pointer
 	transition: all .3s ease
 
+.bcForm .fa-times-circle:hover
+	color: $hover
 
 .bcForm .form
 	display: flex
 	flex-direction: column
 	padding: 10px 30px
 
-.bcForm input[type="text"]
+textarea, input[type="text"]
 	background: #fff
 	border: 1px solid #ccc
 	padding: 5px
@@ -480,5 +505,63 @@ form
 	padding: 10px
 
 #sendcall.btn
-	margin: 15px 0 0	
+	margin: 15px 0 0
+
+#one-click
+	position: fixed
+	left: 0
+	top: 0
+	background: rgba(5, 47, 64, 0.8)
+	width: 100%
+	overflow: auto
+	height: 100%
+	z-index: 99999
+	padding-top: 3%
+	display: none
+
+
+#sendordermsg
+	width: 40%
+	display: none
+	margin: auto
+	padding: 10px
+	border-radius: 10px
+	flex-direction: column
+	align-items: center
+	text-align: center
+	font-size: 27px
+	position: relative
+	color: #fff
+	background: $accent
+
+#sendordermsg i
+	position: absolute
+	top: 10px
+	right: 10px
+	cursor: pointer
+
+#sendorderform
+	width: 20%
+	display: block
+	margin: auto
+	padding: 10px
+	background: $bg
+	border-radius: 5px
+	flex-direction: column
+	position: relative
+
+
+#sendorderform .fa-times-circle
+	position: absolute
+	right: -25px
+	font-size: 28px
+	cursor: pointer
+	color: #fff
+	top: -25px
+
+.form-order
+	width: 100%
+	display: flex	
+	flex-direction: column						
+
 @import "media.sass" // Всегда в конце

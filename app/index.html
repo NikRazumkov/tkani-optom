@@ -20,13 +20,17 @@
 
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container hide">
 			<div class="slogan">
 				<h2>Тут можно разместить какой нить слоган или убрать этот раздел!</h2>
 			</div>
 		</div>
 		<div class="container">
-			<div class="top-line">
+			<div class="top-line 	mobile-direction">
+				<i class="fas fa-search"></i>
+				<i class="fas fa-bars"></i>
+				<i class="fas fa-times hide"></i>
+				
 				<div class="header-logo">
 					<a href="#" class="logo">
 						<img src="img/logo.png" alt="Ткани оптом" class="logo-img">
@@ -37,12 +41,14 @@
 					<ul>
 						<li class="info-link">Время работы: <b>8:00-22:00</b></li>
 						<li class="info-link">Заказы принимаются круглосуточно!</li>
-						<li class="info-link"><a href="mailto:info@tkani-optom.by" class="mail-link">info@tkani-optom.by</a></li>
+						<li class="info-link padding-vert"><a href="mailto:info@tkani-optom.by" class="mail-link">info@tkani-optom.by</a></li>
 						<li class="info-link"><a href="mailto:info@tkani-optom.by" class="mail-link">sale@tkani-optom.by</a></li>
 					</ul>
 				</div>
-				<div class="nav-search">
-					<div class="search">
+				<div class="nav-search ">
+
+					<div class="search hide">
+						<i class="far fa-times-circle hide"></i>
 						<form action="" method="GET">
 							<input class="input-search" type="text" value="" name="request" placeholder="Поиск по товарам...">
 						</form>
@@ -56,7 +62,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="header-phone">
+				<div class="header-phone hide">
 					<a href="tel:+375291540160" class="phone-link">
 						<span class="code">+375 (29) </span>
 						<span class="phone">154-01-60</span>
@@ -67,216 +73,230 @@
 						<span class="phone">951-03-83</span>
 						<span class="phone-img"><img src="img/mts.png" class="img-responsive" alt="ткани оптом велком"></span>
 					</a>
-					<div class="btn btn-header">Написать нам</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<main>
-		<section class="main-slider">
-			<div class="container">
-				<div class="slider-wrap">
-					<h2>Широкий ассортимент тканей</h2>
-					  <div class="slider">
-					    <div class="slider-item"><a class="slider-link btn" href="#">Подробнее</a><img src="img/slider/masloSl-1140x380.jpg" class="img-responsive" alt="Ткань масло" title="Ткань масло"></div>
-					    <div class="slider-item"><a class="slider-link btn" href="#">Подробнее</a><img src="img/slider/viskozaSl-1140x380.jpg" class="img-responsive" alt="Ткань вискоза" title="Ткань вискоза"></div>
-					    <div class="slider-item"><a class="slider-link btn" href="#">Подробнее</a><img src="img/slider/angoraSl-1140x380.jpg" class="img-responsive" alt="Ткань ангора" title="Ткань ангора"></div>
-					  </div>
-				</div>	
-			</div>
-		</section>
-		<section class="advantage">
-			<div class="container">
-				<div class="advantage-wrap">
-					<h2>Почему мы предлагаем купить ткани у нас?</h2>
-					<p>Наша компания нацелена на долгосрочное и взаимовыгодное сотрудничество как с небольшими  магазинами, так и с крупными производствами. Для каждого покупателя мы приготовили выгодное предложение.</p>
-					<a href="#" class="advantage-item bg-title">
-						<i class="fas fa-thumbs-up"></i>
-						<div class="advantage-text">
-							<div class="advantage-text-top">Выгодные предложения</div>
-							<div class="advantage-text-bottom">Оптовым <br>покупателям</div>
-						</div>
-					</a>
-					<a href="#" class="advantage-item bg-phone">
-						<i class="fas fa-infinity"></i>
-						<div class="advantage-text">
-							<div class="advantage-text-top">На складе и под заказ</div>
-							<div class="advantage-text-bottom">Большой <br> ассортимент</div>
-						</div>	
-					</a>
-					<a href="#" class="advantage-item bg-accent">
-						<i class="fas fa-shipping-fast"></i>
-						<div class="advantage-text">
-							<div class="advantage-text-top">По всей Беларуси</div>
-							<div class="advantage-text-bottom">Быстрая <br> доставка</div>
-						</div>	
-					</a>
-					<a href="#" class="advantage-item bg-link">
-						<i class="fas fa-handshake"></i>
-						<div class="advantage-text">
-							<div class="advantage-text-top">Бесплатные</div>
-							<div class="advantage-text-bottom">Консультации</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
+					<div id="btn-order" class="btn btn-header">Написать нам</div>
 
-		<section class="topsale">
-			<div class="container">
-				<div class="topsale-wrap">
-					<nav>
-						<div class="nav-category">Категории тканей</div>
-						<ul class="side-menu">
-							<li class="side-link">
-								<span href="#" class="active nav-link nav-padding">Вискоза</span>
-								<i class="fas fa-plus"></i>
-								<i class="fas fa-minus"></i>
-								<ul class="sub-side-menu">
-									<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза набивная</a></li>
-									<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза однотонная</a></li>
-								</ul>
-							</li>
-							<li class="side-link"><a href="#" class="nav-link nav-padding">Хамур</a></li>
-							<li class="side-link">
-								<a href="#" class="nav-link nav-padding">Масло</a>
-								<i class="fas fa-plus"></i>
-								<i class="fas fa-minus"></i>
-								<ul class="sub-side-menu">
-									<li class="side-link"><a href="#" class="nav-link nav-padding">Масло набивное</a></li>
-									<li class="side-link"><a href="#" class="nav-link nav-padding">Масло однотонное</a></li>
-								</ul>
-							</li>
-							<li class="side-link"><a href="#" class="nav-link nav-padding">Штапель</a></li>
-							<li class="side-link"><a href="#" class="nav-link nav-padding">Шифон</a></li>
-							<li class="side-link"><a href="#" class="nav-link nav-padding">Милано академик</a></li>
-							<li class="side-link"><a href="#" class="nav-link nav-padding">Ангора</a></li>
-							<li class="side-link"><a href="#" class="nav-link nav-padding">Футер</a></li>
-						</ul>
-					</nav>
-					<div class="topsale-good">
-						<h2 class="section-title">Купить ткани - лидеры продаж</h2>
-						<div class="goods-group">
-							<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-0152.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-0152</span>
-								<span class="price">Цена за метр погонный: <b>11</b> р.</span>
+					<div id="one-click">
+						<div id="sendordermsg"><i class="far fa-times-circle"></i>Ваша заявка отправлена.<br> Наш менеджер свяжется с Вами.</div>
+						<div id="sendorderform">
+							<h3>Обратная связь</h3>
+							<i class="far fa-times-circle"></i>
+								<div class="form-order">
+									<label class="label-name" for="name">Имя:</label>
+									<input id="name" name="name" type="text" placeholder="Введите Ваше имя">
+									<label class="label-email" for="email">Email: <sup>*</sup></label>
+									<input id="email" name="email" type="text" placeholder="Укажите Ваш email">
+									<label class="label-phone" for="phone">Телефон:</label>
+									<input id="phone" name="phone" type="text" placeholder="Укажите Ваш телефон">
+									<label class="label-text" for="body">Сообщение: <sup>*</sup></label>
+									<textarea id="body" name="body" rows="6"></textarea>
+									<span class="btn" id="sendorder">Отправить</span>
+								</div>
 							</div>
-														<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2001c1.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-2001 C1</span>
-								<span class="price">Цена за метр погонный: <b>13</b> р.</span>
-							</div>
-														<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2003c1.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-2003 c1</span>
-								<span class="price">Цена за метр погонный: <b>11</b> р.</span>
-							</div>
-														<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2003c2.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-2003 C2</span>
-								<span class="price">Цена за метр погонный: <b>11</b> р.</span>
-							</div>
-														<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2003c3.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-2003 C3</span>
-								<span class="price">Цена за метр погонный: <b>14</b> р.</span>
-							</div>
-														<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2003c4.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-2003 C4</span>
-								<span class="price">Цена за метр погонный: <b>13</b> р.</span>
-							</div>
-														<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2012c2.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-2012 C2</span>
-								<span class="price">Цена за метр погонный: <b>11</b> р.</span>
-							</div>
-														<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2017c4.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-2017 C4</span>
-								<span class="price">Цена за метр погонный: <b>11</b> р.</span>
-							</div>
-														<div class="goods-item">
-								<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-0152.jpg" class="img-responsive" alt=""></a>
-								<a href="#" class="good-link nav-link ">Вискоза набивная</a>
-								<span class="articul">арт: BH-0152</span>
-								<span class="price">Цена за метр погонный: <b>11</b> р.</span>
-							</div>
-
 						</div>
-
 					</div>
-				</div>	
-			</div>
-		</section>
-		<section class="content">
-			<div class="container">
-			<div class="content-wrap bg">
-				<h1 class="section-title">Ткани оптом в Минске и по всей Беларуси.</h1>
-				<div class="content-text">
-
 				</div>
 			</div>
-			</div>
-		</section>
-
-	</main>
-
-
-	<footer class="footer">
-		<div class="container">
-			<div class="footer-wrap">
-			  <div class="copyright">© 2018  Все права защищены. <br> Разработка
-          <a href="#" class="nav-link" target="_blank" rel="nofollow" title="Разработка и дизайн сайта">Nik Razumkov</a>
-        </div>
-        <a href="#" class="grey">Яндекс метрика</a>
-        <div class="header-phone">
-					<a href="tel:+375291540160" class="phone-link">
-						<span class="code grey">+375 (29) </span>
-						<span class="phone grey">154-01-60</span>
-					</a>
-					<a href="tel:+375291540160" class="phone-link">
-						<span class="code grey">+375 (44) </span>
-						<span class="phone grey">951-03-83</span>
-					</a>
+		</header>
+		<main class="flex-column">
+			<section class="main-slider hide">
+				<div class="container">
+					<div class="slider-wrap">
+						<h2>Широкий ассортимент тканей</h2>
+						<div class="slider">
+							<div class="slider-item"><a class="slider-link btn" href="#">Подробнее</a><img src="img/slider/masloSl-1140x380.jpg" class="img-responsive" alt="Ткань масло" title="Ткань масло"></div>
+							<div class="slider-item"><a class="slider-link btn" href="#">Подробнее</a><img src="img/slider/viskozaSl-1140x380.jpg" class="img-responsive" alt="Ткань вискоза" title="Ткань вискоза"></div>
+							<div class="slider-item"><a class="slider-link btn" href="#">Подробнее</a><img src="img/slider/angoraSl-1140x380.jpg" class="img-responsive" alt="Ткань ангора" title="Ткань ангора"></div>
+						</div>
+					</div>	
 				</div>
-				<div class="footer-oferts">Вся представленная на сайте информация носит информационный характер и не является публичной офертой.</div>
-			</div>
-		</div>
-
-	<div class="backCall">
-
-        <div class="bcForm flexy" style="display: none;">
-								
-								<i class="far fa-times-circle"></i>
-								<div class="form">
-									                <label for="contactName">Ваше имя:</label>
-                <input id="contactName" type="text" value="">
-                <label for="contactPhone">Ваш телефон:</label>
-                <input id="contactPhone" type="text" value="">
-                <input id="sendcall" class="btn" type="submit" value="Отправить">
-                
+			</section>
+			<section class="advantage">
+				<div class="container">
+					<div class="advantage-wrap">
+						<h2>Почему мы предлагаем купить ткани у нас?</h2>
+						<p>Наша компания нацелена на долгосрочное и взаимовыгодное сотрудничество как с небольшими  магазинами, так и с крупными производствами. Для каждого покупателя мы приготовили выгодное предложение.</p>
+						<a href="#" class="advantage-item bg-title">
+							<i class="fas fa-thumbs-up"></i>
+							<div class="advantage-text">
+								<div class="advantage-text-top">Выгодные предложения</div>
+								<div class="advantage-text-bottom">Оптовым <br>покупателям</div>
 							</div>
-<b id="waitcall">Ваш запрос принят ожидайте звонка</b>
-          
-        </div>
-        <div class="bcClicker" style="">Заказать звонок</div>
-    </div>
-	</footer>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+						</a>
+						<a href="#" class="advantage-item bg-phone">
+							<i class="fas fa-infinity"></i>
+							<div class="advantage-text">
+								<div class="advantage-text-top">На складе и под заказ</div>
+								<div class="advantage-text-bottom">Большой <br> ассортимент</div>
+							</div>	
+						</a>
+						<a href="#" class="advantage-item bg-accent">
+							<i class="fas fa-shipping-fast"></i>
+							<div class="advantage-text">
+								<div class="advantage-text-top">По всей Беларуси</div>
+								<div class="advantage-text-bottom">Быстрая <br> доставка</div>
+							</div>	
+						</a>
+						<a href="#" class="advantage-item bg-link">
+							<i class="fas fa-handshake"></i>
+							<div class="advantage-text">
+								<div class="advantage-text-top">Бесплатные</div>
+								<div class="advantage-text-bottom">Консультации</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
 
-</body>
-</html>
+			<section class="topsale">
+				<div class="container">
+					<div class="topsale-wrap flex-column">
+						<nav>
+							<div class="nav-category">Категории тканей</div>
+							<ul class="side-menu hide">
+								<li class="side-link">
+									<span href="#" class="active nav-link nav-padding">Вискоза</span>
+									<i class="fas fa-plus"></i>
+									<i class="fas fa-minus"></i>
+									<ul class="sub-side-menu">
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза набивная</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза однотонная</a></li>
+									</ul>
+								</li>
+								<li class="side-link"><a href="#" class="nav-link nav-padding">Хамур</a></li>
+								<li class="side-link">
+									<a href="#" class="nav-link nav-padding">Масло</a>
+									<i class="fas fa-plus"></i>
+									<i class="fas fa-minus"></i>
+									<ul class="sub-side-menu">
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло набивное</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло однотонное</a></li>
+									</ul>
+								</li>
+								<li class="side-link"><a href="#" class="nav-link nav-padding">Штапель</a></li>
+								<li class="side-link"><a href="#" class="nav-link nav-padding">Шифон</a></li>
+								<li class="side-link"><a href="#" class="nav-link nav-padding">Милано академик</a></li>
+								<li class="side-link"><a href="#" class="nav-link nav-padding">Ангора</a></li>
+								<li class="side-link"><a href="#" class="nav-link nav-padding">Футер</a></li>
+							</ul>
+						</nav>
+						<div class="topsale-good flex-column">
+							<h2 class="section-title">Купить ткани - лидеры продаж</h2>
+							<div class="goods-group">
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-0152.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-0152</span>
+									<span class="price font-small">Цена: <b>11</b> р.</span>
+								</div>
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2001c1.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-2001 C1</span>
+									<span class="price font-small">Цена: <b>13</b> р.</span>
+								</div>
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2003c1.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-2003 c1</span>
+									<span class="price font-small">Цена: <b>11</b> р.</span>
+								</div>
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2003c2.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-2003 C2</span>
+									<span class="price font-small">Цена: <b>11</b> р.</span>
+								</div>
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2003c3.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-2003 C3</span>
+									<span class="price font-small">Цена: <b>14</b> р.</span>
+								</div>
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2003c4.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-2003 C4</span>
+									<span class="price font-small">Цена: <b>13</b> р.</span>
+								</div>
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2012c2.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-2012 C2</span>
+									<span class="price font-small">Цена: <b>11</b> р.</span>
+								</div>
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-2017c4.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-2017 C4</span>
+									<span class="price font-small">Цена: <b>11</b> р.</span>
+								</div>
+								<div class="goods-item">
+									<a href="#" class="good-item-img"><img  src="img/goods/viskoza/vn-0152.jpg" class="img-responsive" alt=""></a>
+									<a href="#" class="good-link nav-link font-small">Вискоза набивная</a>
+									<span class="articul font-small">арт: BH-0152</span>
+									<span class="price font-small">Цена: <b>11</b> р.</span>
+								</div>
+
+							</div>
+
+						</div>
+					</div>	
+				</div>
+			</section>
+			<section class="content">
+				<div class="container">
+					<div class="content-wrap bg">
+						<h1 class="section-title">Ткани оптом в Минске и по всей Беларуси.</h1>
+						<div class="content-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad fugiat quasi consequatur modi distinctio dolore, exercitationem maiores repudiandae, quam ipsam, incidunt! Aut dolore quaerat, beatae pariatur, ex error, quisquam tempore laudantium cupiditate corporis aliquam soluta minima ullam voluptate. Dolores dolorum nisi ut ad, officia delectus quae aspernatur aut adipisci.</p>			
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad fugiat quasi consequatur modi distinctio dolore, exercitationem maiores repudiandae, quam ipsam, incidunt! Aut dolore quaerat, beatae pariatur, ex error, quisquam tempore laudantium cupiditate corporis aliquam soluta minima ullam voluptate. Dolores dolorum nisi ut ad, officia delectus quae aspernatur aut adipisci.</p>	
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad fugiat quasi consequatur modi distinctio dolore, exercitationem maiores repudiandae, quam ipsam, incidunt! Aut dolore quaerat, beatae pariatur, ex error, quisquam tempore laudantium cupiditate corporis aliquam soluta minima ullam voluptate. Dolores dolorum nisi ut ad, officia delectus quae aspernatur aut adipisci.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad fugiat quasi consequatur modi distinctio dolore, exercitationem maiores repudiandae, quam ipsam, incidunt! Aut dolore quaerat, beatae pariatur, ex error, quisquam tempore laudantium cupiditate corporis aliquam soluta minima ullam voluptate. Dolores dolorum nisi ut ad, officia delectus quae aspernatur aut adipisci.</p>									
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-wrap">
+					<div class="copyright">© 2018  Все права защищены. <br> Разработка
+						<a href="#" class="nav-link" target="_blank" rel="nofollow" title="Разработка и дизайн сайта">Nik Razumkov</a>
+					</div>
+					<a href="#" class="grey">Яндекс метрика</a>
+					<div class="header-logo">
+						<a href="#" class="logo">
+							<img src="img/logo.png" alt="Ткани оптом" class="logo-img">
+						</a>
+					</div>
+					<div class="footer-oferts">Вся представленная на сайте информация носит информационный характер и не является публичной офертой.</div>
+				</div>
+			</div>
+
+			<div class="backCall hide">
+				<div class="bcForm flexy">
+					<i class="far fa-times-circle"></i>
+					<div class="form">
+						<label for="contactName">Ваше имя:</label>
+						<input id="contactName" type="text" value="">
+						<label for="contactPhone">Ваш телефон:</label>
+						<input id="contactPhone" type="text" value="">
+						<input id="sendcall" class="btn" type="submit" value="Отправить">
+					</div>
+					<b id="waitcall">Ваш запрос принят ожидайте звонка</b>
+				</div>
+				<div class="bcClicker" style="">Заказать звонок</div>
+			</div>
+
+		</footer>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.min.css">
+		<script src="js/scripts.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	</body>
+	</html>

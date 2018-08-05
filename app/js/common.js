@@ -19,6 +19,27 @@ $(function() {
 	});
 /* END Мобильное меню*/
 
+/* Мобильное меню категорий*/
+	if ($(window).width() < 480) {
+		 $('.nav-category').on('click', function(){
+			$('.fa-ellipsis-v').toggle();
+			$('.fa-ellipsis-h').toggle();
+			$('.side-menu').slideToggle();
+		});
+	} 
+
+
+	$('.fa-caret-right').on('click', function(){
+		$(this).next().fadeToggle();
+	});
+
+	 $('.fa-caret-left').on('click', function(){
+		$(this).parent().fadeToggle();
+	});
+
+
+/* END Мобильное меню*/
+
 
 /* Заказать обратный звонок*/
    $('.bcClicker').on('click', function(){
@@ -52,17 +73,18 @@ $(function() {
       });
               return false;
   });
+  if($(window).width() < 480) {
+	  	$('.top-line .fa-search').on('click', function(){
+		  	$('.search').fadeToggle();
+		  	$('.search').addClass("search-mobile");
+		  });
 
-  $('.top-line .fa-search').on('click', function(){
-  	$('.search').fadeToggle();
-  	$('.search').addClass("search-mobile");
-  });
+		  $('.top-line .fa-times-circle').on('click', function(){
+		  	$('.search').removeClass("search-mobile");
+		  	$('.search').hide();
+		  });
+  }  
 
-  $('.top-line .fa-times-circle').on('click', function(){
-  	$('.search').removeClass("search-mobile");
-  	$('.search').hide();
-
-  });
 /* END Заказать обратный звонок*/
 
   $('.bcClicker').on('click', function(){

@@ -63,16 +63,16 @@
 					</nav>
 				</div>
 				<div class="header-phone hide">
-					<a href="tel:+375291540160" class="phone-link">
+					<div class="phone-link">
 						<span class="code">+375 (29) </span>
 						<span class="phone">154-01-60</span>
 						<span class="phone-img"><img src="img/velcom.png" class="img-responsive" alt="ткани оптом велком"></span>
-					</a>
-					<a href="tel:+375291540160" class="phone-link">
+					</div>
+					<div class="phone-link">
 						<span class="code">+375 (44) </span>
 						<span class="phone">951-03-83</span>
 						<span class="phone-img"><img src="img/mts.png" class="img-responsive" alt="ткани оптом велком"></span>
-					</a>
+					</div>
 					<div id="btn-order" class="btn btn-header">Написать нам</div>
 
 					<div id="one-click">
@@ -151,13 +151,19 @@
 				<div class="container">
 					<div class="topsale-wrap flex-column">
 						<nav>
-							<div class="nav-category">Категории тканей</div>
-							<ul class="side-menu hide">
+							<div class="nav-category">Категории тканей<i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-v"></i></div>
+							<ul class="side-menu">
 								<li class="side-link">
 									<span href="#" class="active nav-link nav-padding">Вискоза</span>
-									<i class="fas fa-plus"></i>
-									<i class="fas fa-minus"></i>
+									<i class="fas fa-plus hide"></i>
+									<i class="fas fa-minus hide"></i>
+									<i class="fas fa-caret-right"></i>
 									<ul class="sub-side-menu">
+										<i class="fas fa-caret-left"></i>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза набивная</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза однотонная</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза набивная</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза однотонная</a></li>
 										<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза набивная</a></li>
 										<li class="side-link"><a href="#" class="nav-link nav-padding">Вискоза однотонная</a></li>
 									</ul>
@@ -165,9 +171,17 @@
 								<li class="side-link"><a href="#" class="nav-link nav-padding">Хамур</a></li>
 								<li class="side-link">
 									<a href="#" class="nav-link nav-padding">Масло</a>
-									<i class="fas fa-plus"></i>
-									<i class="fas fa-minus"></i>
+									<i class="fas fa-plus hide"></i>
+									<i class="fas fa-minus hide"></i>
+									<i class="fas fa-caret-right"></i>
 									<ul class="sub-side-menu">
+										<i class="fas fa-caret-left"></i>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло набивное</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло однотонное</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло набивное</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло однотонное</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло набивное</a></li>
+										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло однотонное</a></li>
 										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло набивное</a></li>
 										<li class="side-link"><a href="#" class="nav-link nav-padding">Масло однотонное</a></li>
 									</ul>
@@ -290,6 +304,8 @@
 				</div>
 				<div class="bcClicker" style="">Заказать звонок</div>
 			</div>
+
+			<div class="button-call" onclick="window.location.href='tel:+375291540160'"><i class="fas fa-phone-square"></i>Позвонить нам</div>
 
 		</footer>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">

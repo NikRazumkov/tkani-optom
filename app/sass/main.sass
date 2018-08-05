@@ -140,8 +140,23 @@ form
 .fa-search
 	display: none
 
-.top-line .fa-times-circle
+.top-line .fa-times 
+	display: none	
+
+.search .fa-times-circle
 	display: none
+	font-size: 20px
+
+.fa-ellipsis-h
+	padding-left: 20px
+	font-size: 20px
+
+.fa-ellipsis-v
+	display: none
+	padding-left: 20px	 
+
+.side-menu .nav-link
+	width: 70%
 
 .header-nav
 	display: flex
@@ -182,7 +197,7 @@ form
 	cursor: pointer
 	transition: all .3s ease
 	border: none
-	
+
 .fa-bars
 	display: none
 
@@ -329,11 +344,11 @@ form
 .side-link
 	border-bottom: 1px solid $back
 	padding: 5px 0
-	position: relative
 	display: flex
 	align-items: center
 	justify-content: space-between
-
+	flex-wrap: wrap
+	position: relative
 
 .sub-side-menu
 	display: none
@@ -341,7 +356,7 @@ form
 	right: -200px
 	top: 0
 	width: 200px
-	background: #fff
+	background: $bg
 
 .side-link:hover .sub-side-menu
  display: flex
@@ -362,7 +377,8 @@ form
 	display: block	
 
 .nav-padding
-	padding: 10px	
+	padding: 10px
+
 
 .topsale-good
 	display: flex
@@ -382,7 +398,7 @@ form
 	align-items: center
 	justify-content: start
 	flex-direction: column
-	width: 29%
+	width: 28%
 	box-shadow: 0 1px 3px #d0d0d0
 	transition: all .3s ease
 	margin: 10px
@@ -562,6 +578,11 @@ textarea, input[type="text"]
 .form-order
 	width: 100%
 	display: flex	
-	flex-direction: column						
+	flex-direction: column
 
+.fa-caret-left, .fa-caret-right
+	display: none 							
+
+.button-call
+	display: none
 @import "media.sass" // Всегда в конце

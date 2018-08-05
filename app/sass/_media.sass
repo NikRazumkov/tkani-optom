@@ -47,7 +47,7 @@
 /* i-Pad */
 @media only screen and (max-width : 768px)
 	.goods-item
-		width: 26%
+		width: 25%
 
 	.font-small
 		font-size: 12px
@@ -92,12 +92,13 @@
 	
 	.nav-category
 		margin-top: 0
+		font-size: 20px
 
 	.fa-search
 		display: block
 		position: absolute
-		top: 10px
-		right: 10px
+		bottom: 15px
+		left: 15px
 		font-size: 30px
 		color: $link
 
@@ -112,25 +113,25 @@
 
 	.search-mobile
 		position: absolute
-		top: 0
+		bottom: -107px
 		left: 0
 		right: 0
 		z-index: 999
 		display: block
-		background: rgba(5, 47, 64, 0.8)
-		padding: 50px 10px 10px
+		background: $phone
+		padding: 60px 10px 10px
 	
 	.fa-bars
 		display: block
 		position: absolute
-		left: 15px
+		right: 15px
 		bottom: 15px
 		color: $link
 		font-size: 30px
 	
 	.fa-times
 		position: absolute
-		left: 15px
+		right: 15px
 		bottom: 15px
 		color: $link
 		font-size: 30px
@@ -155,9 +156,73 @@
 		border-bottom: 1px solid #eee
 		width: 100%
 
+	.side-menu
+		display: none	
 
-			
+	.side-link .sub-side-menu
+		right: 0
+		top: 0
+		background: #fff
+		width: 100%
+		z-index: 9999999
+		display: none
+		height: 100%
 
+	.sub-side-menu .fa-caret-left
+		position: absolute
+		top: 0
+		right: 15px
+		font-size: 20px
+		color: $phone
+		z-index: 9999999999
+		
+	.side-link:hover .fa-minus
+		display: none
+
+	.side-link i
+		padding: 20px	
+		
+	.fa-caret-left, .fa-caret-right
+		display: block
+
+	.nav-padding
+		padding: 10px
+		font-size: 18px
+
+	.side-link .sub-side-menu .side-link
+ 		background: $bg		
+
+	.side-link:hover .sub-side-menu
+ 		display: none
+
+	.button-call
+		display: block
+		position: fixed
+		left: 0
+		width: 100%
+		z-index: 99999
+		padding: 14px 0
+		bottom: 0
+		text-align: center
+		background: $hover
+		color: #fff
+		font-size: 25px
+		text-transform: uppercase
+		font-weight: bold
+
+	.button-call i 
+		padding: 0 15px	
+
+	.footer
+		margin-bottom: 60px
+
+	.section-title
+ 		margin: 0
+
+	.footer-wrap 
+	 	padding: 20px 10px
+	 	flex-direction: column	
+ 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

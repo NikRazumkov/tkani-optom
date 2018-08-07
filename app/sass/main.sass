@@ -193,7 +193,6 @@ form
 	color: #fff
 	text-align: center
 	padding: 10px 20px 
-	border-radius: 10px
 	cursor: pointer
 	transition: all .3s ease
 	border: none
@@ -206,6 +205,15 @@ form
 
 .btn-header 
 	margin-top: 10px
+
+
+.btn-more 
+	padding: 2px 20px
+	position: absolute
+	right: 7px
+	bottom: 7px
+	
+
 
 .code
 	color: #777
@@ -328,6 +336,7 @@ form
 	margin: 20px 20px 10px
 	color: $accent
 	text-align: center
+	border: 1px solid
 
 .side-menu
 	position: relative
@@ -357,6 +366,7 @@ form
 	top: 0
 	width: 200px
 	background: $bg
+	z-index: 9999
 
 .side-link:hover .sub-side-menu
  display: flex
@@ -394,22 +404,33 @@ form
 
 .goods-item
 	display: flex
-	padding: 10px
-	align-items: center
+	padding: 5px
+	align-items: start
 	justify-content: start
-	flex-direction: column
-	width: 28%
+	width: 46%
 	box-shadow: 0 1px 3px #d0d0d0
 	transition: all .3s ease
 	margin: 10px
-	background: #ddf3fb
+	background: #fff
+	position: relative		
 
 	
 .good-item-img
-	padding: 20px
+	padding: 5px
 	box-shadow: 0 1px 3px #d0d0d0
 	transition: all .3s ease
-	background: $bg
+	background: #fff
+	width: 25%
+
+.good-item-text
+	display: flex
+	padding-left: 10px
+	justify-content: stretch
+	align-items: start
+	width: 75%
+	flex-direction: column
+	
+
 
 .good-item-img img
 		transition: all .3s ease	
@@ -585,4 +606,6 @@ textarea, input[type="text"]
 
 .button-call
 	display: none
+
+	
 @import "media.sass" // Всегда в конце

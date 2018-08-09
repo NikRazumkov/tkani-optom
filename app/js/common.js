@@ -3,6 +3,10 @@ $(function() {
 	 $('.slider').bxSlider({
 		auto: true
 	 });
+	$('.flex-column').scrollTop(function () {
+		$('.header').outerHeight();
+	 	$('.flex-column').offset().top;
+	});
 
 
 /* Мобильное меню*/
@@ -47,11 +51,19 @@ $(function() {
 
 
 	$('.fa-caret-right').on('click', function(){
+		if ($('ul').hasClass("act")){
+			$('ul.act').toggle("slide");
+			$('ul').removeClass("act");
+			
+		}
+		$(this).next().addClass("act");
 		$(this).next().toggle("slide");
+
 	});
 
 	 $('.fa-caret-left').on('click', function(){
 		$(this).parent().toggle("slide");
+		$(this).parent().removeClass("act");
 	});
 
 

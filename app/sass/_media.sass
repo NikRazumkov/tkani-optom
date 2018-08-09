@@ -107,19 +107,11 @@
 		top: 5px
 		left: 5px
 		font-size: 30px
-		color: #fff
+		color: $link
 		z-index: 99999
 		padding: 10px
 
-	.search-mobile
-		position: absolute
-		top: 0px
-		left: 0
-		right: 0
-		z-index: 999
-		display: block
-		background: $phone
-		padding: 60px 10px 10px
+
 	
 	.fa-bars
 		display: block
@@ -182,7 +174,7 @@
 	.sub-side-menu .fa-caret-left
 		position: absolute
 		top: 0
-		right: 15px
+		right: 0px
 		font-size: 20px
 		color: $phone
 		z-index: 9999999999
@@ -201,7 +193,9 @@
 		font-size: 18px
 
 	.side-link .sub-side-menu .side-link
- 		background: $bg		
+ 		background: #f8f8f8
+ 		border-bottom: 1px solid #eee
+ 		padding: 6px 0		
 
 	.side-link:hover .sub-side-menu
  		display: none
@@ -233,7 +227,6 @@
 
 	.footer-wrap 
 	 	padding: 20px 10px
-	 	flex-direction: column
 
 	.goods-item
 		align-items: stretch
@@ -253,7 +246,23 @@
 		line-height: 1.1
 		font-size: 18px		
 
+	.advantage-text
+		width: 60%
 
+	.advantage-item i 
+		width: 40%
+		text-align: right
+
+	.footer-oferts
+		padding-top: 10px	
+
+	.copyright
+		width: 100%
+		text-align: center
+		padding-bottom: 10px
+
+	.search
+		padding: 10px 10px 0			
  
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

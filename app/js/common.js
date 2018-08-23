@@ -154,4 +154,39 @@ $(function() {
 		});
 
 
+/* Открытие заявки в товаре */
+	$('#btn-buy').on('click', function () {
+		$('#buy-click').show();
+	});
+
+	$('#sendbuymsg i').on('click', function () {
+		$('#buy-click').hide();
+	});
+	$('#sendbuyform i').on('click', function () {
+		$('#buy-click').hide();
+	});
+
+	/* Отправка заявки в контактной форме */
+		$("#senbuy").on('click', function() {
+			if ($("#sendbuyform input[name=email]").val() != $("#sendbuyform input[name=email]").val().match(/^[a-zA-Z0-9_.%-]+@[a-zA-Z0-9_.%-]+\.[a-zA-Z]+[a-zA-Z]/)) { alert("Заполните корректно поле email"); return false; }
+			if ($("#sendbuyform textarea[name=body]").val().length < 5  ) { alert("Заполните поле сообщение."); return false; }
+			$.ajax({
+				type: "POST",
+				url: "/contacts.php?action=buy",
+				data: {	email: $("#sendbuyform input[name=email]").val(), 
+								name: $("#sendbuyform input[name=name]").val(), 
+								phone: $("#sendbuyform input[name=phone]").val(),
+								body: $("#sendbuyform textarea[name=body").val(),
+				      },
+				success: function(response)	{
+				var	$msg = $.parseJSON(response);
+				if ($msg.Error == false) {
+						$("#sendbuymsg").show();
+						$("#sendbuyform").hide();
+					} 
+				}
+			});
+			return false;
+		});
+
 });

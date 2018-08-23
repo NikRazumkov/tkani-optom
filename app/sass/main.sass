@@ -514,7 +514,7 @@ form
 .flexy
 	display: flex
 	flex-direction: column
-	background: $bg
+	background: #fff
 	transition: all 1s ease
 	padding: 5px
 	border-top-right-radius: 10px	
@@ -554,7 +554,7 @@ textarea, input[type="text"]
 #sendcall.btn
 	margin: 15px 0 0
 
-#one-click
+#one-click, #buy-click
 	position: fixed
 	left: 0
 	top: 0
@@ -567,7 +567,7 @@ textarea, input[type="text"]
 	display: none
 
 
-#sendordermsg
+#sendordermsg, #sendbuymsg
 	width: 40%
 	display: none
 	margin: auto
@@ -581,24 +581,24 @@ textarea, input[type="text"]
 	color: #fff
 	background: $accent
 
-#sendordermsg i
+#sendordermsg i, #sendbuymsg i
 	position: absolute
 	top: 10px
 	right: 10px
 	cursor: pointer
 
-#sendorderform
+#sendorderform, #sendbuyform
 	width: 20%
 	display: block
 	margin: auto
 	padding: 10px
-	background: $bg
+	background: #fff
 	border-radius: 5px
 	flex-direction: column
 	position: relative
 
 
-#sendorderform .fa-times-circle
+#sendorderform .fa-times-circle, #sendbuyform .fa-times-circle
 	position: absolute
 	right: -25px
 	font-size: 28px
@@ -621,5 +621,47 @@ textarea, input[type="text"]
 	background: #f8f8f8
 	border-bottom: 1px solid #eee
 	padding: 5px 0
+
+.good
+	display: flex
+	padding: 20px
+
+
+.good-img
+	flex: 1
+	text-align: center
+
+.good-img img
+	max-width: 100% 
+
+.good-desc
+	flex: 2
+	display: flex
+	flex-direction: column
+	padding: 0 10px
+	margin: 0 10px
+	align-items: left			
+
+.btn-buy
+	width: 200px
+
+.good-price
+	margin: 10px
+	font-size: 24px
+
+.good-price b 
+	color: $hover
+	font-size: 28px
+
+.good-char 
+	padding: 5px
+
+.good-char b
+	color: $phone 	
+
+.good-desc h1 
+	padding: 0
+	color: $accent		
+
 
 @import "media.sass" // Всегда в конце
